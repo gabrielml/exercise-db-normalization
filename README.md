@@ -122,3 +122,47 @@ into individual rows and created
 a **composite primary key** with ```id_student``` and ```course_name```.
 
 ![1nf second iteration](img/2_1nf_second_iteration-min.png)
+
+### 2. Second Normal Form (2NF)
+
+Once my table was in the 1NF state, the goal at this point was to **eliminate partial dependencies**,
+ensuring that all **non-key attributes** were fully dependent on the **entire primary key**.
+
+To achieve this goal, I identified the fields that weren't entirely dependent on the **composite
+primary key** (i.e., ```name_student```, ```classroom```, and ```classroom_description```).
+
+| Composite Primary Key              | Non-Key Attributes          | Does it depend on the entire CPK?                                            |
+|------------------------------------|-----------------------------|------------------------------------------------------------------------------|
+| ```id_student``` ```course_name``` | ```name_student```          | No, it only depends on their ```id_student```                                |
+|                                    | ```classroom```             | No, it only depends on their ```id_student```                                |
+|                                    | ```classroom_description``` | No, it depends on ```classroom```, which in turn depends on ```id_student``` |
+
+I then separated these fields into new, separate tables (i.e., ```Students``` and ```Classrooms```).
+
+![2nf students and classrooms tables](img/3_2nf_students_classrooms-min.png)
+
+Finally, to resolve the [many-to-many relationship](https://en.wikipedia.org/wiki/Many-to-many_(data_model)) between
+students and courses,
+I created the ```Student-Courses``` table (also called a join table
+or [associative entity](https://en.wikipedia.org/wiki/Associative_entity#:~:text=An%20associative%20entity%20is%20a,%2C%20informally%2C%20an%20associative%20table.)).
+This table acted as a bridge between the ```Students``` and ```Courses``` tables. It was composed of two foreign keys.
+
+Together, these two foreign keys form a composite primary key (just like in 1NF) for the ```Student_Courses``` table.
+This unique combination ensures that each row represents a single enrollment instance: **a specific student taking a
+specific course**.
+
+In essence, this table breaks down
+the [many-to-many relationship](https://en.wikipedia.org/wiki/Many-to-many_(data_model))
+into two [one-to-many relationships](https://en.wikipedia.org/wiki/One-to-many_(data_model)):
+
+- A student can have **many** entries in the ```Student_Courses``` table.
+- A course can have **many** entries in the ```Student_Courses``` table.
+
+This is the standard and most efficient way to model this type of relationship in a relational database.
+It ensures [data integrity](https://www.ibm.com/think/topics/data-integrity) and
+avoids [redundancy](https://www.ibm.com/think/topics/data-redundancy).
+
+![2nf  student_courses table](img/4_2nf_student_courses-min.png)
+
+At the time, I had three separate tables, each in 2NF because all non-key attributes were completely dependent on their
+respective primary keys.
