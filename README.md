@@ -204,6 +204,6 @@ I used the normalized tables from the previous steps to broadly identify entitie
 
 ![Conceptual Model - Chen's ERD](img/7_Chen_ERD_DB_normalization-min.png)
 
-The purpose of this conceptual ERD was to provide a high-level, abstract overview of the system's main entities and their relationships.
+The purpose of [this conceptual ERD](https://drive.google.com/file/d/1GjajGZ9PVo8j4_fJf5nUH4ptAbWDl_ZZ/view?usp=sharing) was to provide a high-level, abstract overview of the system's main entities and their relationships.
 
 Its target audience is business stakeholders and analysts who want to understand the basic structure and requirements of the system.
