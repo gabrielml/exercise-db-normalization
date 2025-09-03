@@ -191,3 +191,19 @@ Thanks to this database design process, I was able to organize the data efficien
 - **Improve flexibility**: A well-normalized database will be easier to modify and extend, since schema changes can be made in one place without affecting other parts of the database.
 
 At this point, I had the **logical blueprint** for my database and was ready to move on to the next key deliverable: **the Conceptual Model**. Chen's Entity-Relationship (ER) diagram would serve as a high-level overview of the work done, representing the entities and their relationships in a clear, abstract format.
+
+## 💡 Conceptual Model
+
+This was the time for the next key deliverable: the Conceptual Model, which is used in the initial stages of database design.
+
+In this case, I used **Chen's Entity-Relationship (ER) Diagram** as a high-level, visual overview of the work done, primarily representing entities and their relationships in a clear, abstract format.
+
+The main types of ERDs (Entity- Relationship Diagrams) are **Conceptual**, **Logical**, and **Physical**, which represent increasing levels of detail, from an abstract, high-level overview to the specific technical details of a database implementation.
+
+I used the normalized tables from the previous steps to broadly identify entities (`STUDENTS`, `CLASSROOMS`, `COURSES`), their relationships, and attributes, without including technical details about attributes or storage.
+
+![Conceptual Model - Chen's ERD](img/7_Chen_ERD_DB_normalization-min.png)
+
+The purpose of this conceptual ERD was to provide a high-level, abstract overview of the system's main entities and their relationships.
+
+Its target audience is business stakeholders and analysts who want to understand the basic structure and requirements of the system.
