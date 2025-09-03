@@ -155,8 +155,8 @@ In essence, this table breaks down
 the [many-to-many relationship](https://en.wikipedia.org/wiki/Many-to-many_(data_model))
 into two [one-to-many relationships](https://en.wikipedia.org/wiki/One-to-many_(data_model)):
 
-- A student can have **many** entries in the ```Student_Courses``` table.
-- A course can have **many** entries in the ```Student_Courses``` table.
+* A student can have **many** entries in the ```Student_Courses``` table.
+* A course can have **many** entries in the ```Student_Courses``` table.
 
 This is the standard and most efficient way to model this type of relationship in a relational database.
 It ensures [data integrity](https://www.ibm.com/think/topics/data-integrity) and
