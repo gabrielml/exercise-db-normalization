@@ -174,7 +174,7 @@ One of the milestones of this exercise was to refine the tables to their 3NF sta
 
 In this particular case, the normalization process to 2NF has already resolved the transitive dependencies.
 
-During this step, I created a separate `COURSES` table to hold the `course_name` and a unique identifier for the courses.
+During this step, I created a separate `COURSES` table to hold the `course_name`, a unique identifier for the courses and `id_classroom` a field (foreign key) that refers to the primary key of the `CLASSROOM` table.
 
 ![3nf courses table](img/5_3nf_courses_table-min.png)
 
