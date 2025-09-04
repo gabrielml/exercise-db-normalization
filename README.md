@@ -48,21 +48,21 @@ will follow a progressive approach to ensure the data is structured correctly & 
 
 ### Data Modeling
 
-I will by considering the problem in terms of the three levels of data modeling, as illustrated below.
+I will continue by considering the problem in terms of the three levels of data modeling, as illustrated below.
 
 1. **Conceptual Model**: This is the first step, where I will identify the main entities and the high-level
-   relationships between them from the provided unnormalized data table. The goal is to understand the "Real World"
+   relationships between them from the tables obtained during the previous normalization process. The goal is to understand the "Real World"
    problem without focusing on technical details. I will represent this model using a **Chen Entity-Relationship (ER)
    Diagram**.
 
-2. **Logical Model**: After conceptualizing the data, I will apply the rules of normalization to create a structured
-   logical model. This involves defining all the tables, their attributes (fields), and the relationships between them,
-   including [Primary Keys (PK)](https://en.wikipedia.org/wiki/Primary_key) & [Foreign Keys (FK)](https://en.wikipedia.org/wiki/Foreign_key).
+2. **Logical Model**: After conceptualizing the data with the payload previously obtained from the normalization process, 
+   I will continue building a structured logical model. I will use all the tables, their attributes (fields), and the relationships between them,
+   including [Primary Keys (PK)](https://en.wikipedia.org/wiki/Primary_key) and [Foreign Keys (FK)](https://en.wikipedia.org/wiki/Foreign_key).
    This model is a direct blueprint for the database and will be represented by a **Crow's Feet diagram**.
 
 3. **Physical Model**: Although not required for this exercise, this would be the final stage of the process, where the
    logical model is implemented in a
-   specific [DataBase Management System (DBMS)](https://en.wikipedia.org/wiki/Database#Database_management_system), with
+   specific [database management system (DBMS)](https://en.wikipedia.org/wiki/Database#Database_management_system), with
    considerations for data types, indexes, and performance.
 
 ```mermaid
@@ -95,7 +95,7 @@ graph TD
     style Database fill: #7BB662
 ```
 
-## ♻️ Normalization Process & Data Modeling
+## ♻️ Normalization Process
 
 ### 1. First Normal Form (1NF)
 
@@ -186,19 +186,23 @@ Thanks to this database design process, I was able to organize the data efficien
 
 - **Eliminate redundant data**: By dividing a large table into smaller, related tables, I avoided storing the same data multiple times. This is important because it will save space and make the future database more efficient.
 
-- **Ensure data integrity**: Noramlization helped me ensure data consistency and accuracy. By storing data only once, I will avoid anomalies in updates, inserts, and deletes. For example, if a student's course were stored in multiple locations, an update to that course could be performed in only one of them, resulting in inconsistencies.
+- **Ensure data integrity**: Normalization helped me ensure data consistency and accuracy. By storing data only once, I will avoid anomalies in updates, inserts, and deletes. For example, if a student's course were stored in multiple locations, an update to that course could be performed in only one of them, resulting in inconsistencies.
 
 - **Improve flexibility**: A well-normalized database will be easier to modify and extend, since schema changes can be made in one place without affecting other parts of the database.
 
 At this point, I had the **logical blueprint** for my database and was ready to move on to the next key deliverable: **the Conceptual Model**. Chen's Entity-Relationship (ER) diagram would serve as a high-level overview of the work done, representing the entities and their relationships in a clear, abstract format.
 
-## 💡 Conceptual Model
+## ✍ Data Modeling
+
+I was ready to consider how the data should be organized and related to create a **high-level blueprint** using the conceptual model and finally a **detailed blueprint** using the logical model.
+
+### 💡 Conceptual Model
 
 This was the time for the next key deliverable: the Conceptual Model, which is used in the initial stages of database design.
 
 In this case, I used **Chen's Entity-Relationship (ER) Diagram** as a high-level, visual overview of the work done, primarily representing entities and their relationships in a clear, abstract format.
 
-The main types of ERDs (Entity- Relationship Diagrams) are **Conceptual**, **Logical**, and **Physical**, which represent increasing levels of detail, from an abstract, high-level overview to the specific technical details of a database implementation.
+The main types of ERDs (Entity-Relationship Diagrams) are **Conceptual**, **Logical**, and **Physical**, which represent increasing levels of detail, from an abstract, high-level overview to the specific technical details of a database implementation.
 
 I used the normalized tables from the previous steps to broadly identify entities (`STUDENTS`, `CLASSROOMS`, `COURSES`), their relationships, and attributes, without including technical details about attributes or storage.
 
@@ -208,18 +212,18 @@ The purpose of [this conceptual ERD](https://drive.google.com/file/d/1GjajGZ9PVo
 
 Its target audience is business stakeholders and analysts who want to understand the basic structure and requirements of the system.
 
-## 🗄️ Logical Model
+### 🗄️ Logical Model
 
-Once the normalization process is complete and the conceptual model is established, the next and final step in this exercise is to create a logical model that presents a different level of detail in data modeling-a more detailed, yet still abstract,
+Once the normalization process is complete and the conceptual model is established, the next and final step in this exercise is to create a logical model that presents a different level of detail in data modeling. A more detailed, yet still abstract,
 view of the database structure, regardless of the specific technology.
 
-This model serves as a detailed model for the  final database, translating the general concepts of Chen's ER diagram into a structured schema that can be implemented in a database management system (DBMS).
+This model serves as a detailed model for the  final database, translating the general concepts of Chen's ER diagram into a structured schema that can be implemented in a [database management system (DBMS)](https://en.wikipedia.org/wiki/Database#Database_management_system).
 
 The Crow's Feet notation provides a clear visual representation of tables, their columns (including a primary and foreign keys), and the precise cardinality of their relationships.
 
 ![Logical Model - Crow's Feet notation ERD](img/8_Crows_Feet_ER-DB_normalization-min.png)
 
-This logical diagram bridges the conceptual model with the physical implementation, ensuring that all data is considered and relationships are clearly defined.
+[This logical diagram](https://drive.google.com/file/d/109eTVfU7PFW509tdmr5zvcTPN4XpfIA7/view?usp=sharing) bridges the conceptual model with the physical implementation, ensuring that all data is considered and relationships are clearly defined.
 
 Its target audience is database designers, who use it to model data and its relationships at the conceptual level for a specific database system.
 
