@@ -207,3 +207,24 @@ I used the normalized tables from the previous steps to broadly identify entitie
 The purpose of [this conceptual ERD](https://drive.google.com/file/d/1GjajGZ9PVo8j4_fJf5nUH4ptAbWDl_ZZ/view?usp=sharing) was to provide a high-level, abstract overview of the system's main entities and their relationships.
 
 Its target audience is business stakeholders and analysts who want to understand the basic structure and requirements of the system.
+
+## 🗄️ Logical Model
+
+Once the normalization process is complete and the conceptual model is established, the next and final step in this exercise is to create a logical model that presents a different level of detail in data modeling-a more detailed, yet still abstract,
+view of the database structure, regardless of the specific technology.
+
+This model serves as a detailed model for the  final database, translating the general concepts of Chen's ER diagram into a structured schema that can be implemented in a database management system (DBMS).
+
+The Crow's Feet notation provides a clear visual representation of tables, their columns (including a primary and foreign keys), and the precise cardinality of their relationships.
+
+![Logical Model - Crow's Feet notation ERD](img/8_Crows_Feet_ER-DB_normalization-min.png)
+
+This logical diagram bridges the conceptual model with the physical implementation, ensuring that all data is considered and relationships are clearly defined.
+
+Its target audience is database designers, who use it to model data and its relationships at the conceptual level for a specific database system.
+
+We have reached the end of my exercise, congratulations and thank you if you have been able to stick with me all this time, you are amazing!
+
+And remember...
+
+>" _It is essential to understand the database structure before writing a single line of code, ensuring that the design is robust, efficient, and accurately reflects the standardized data model._ "
