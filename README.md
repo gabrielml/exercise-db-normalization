@@ -271,3 +271,15 @@ into a clean and efficient relational schema.
 cleanly and maintain a clear, profesional project history.
  
 * **README-Driven Development**: I discovered the value of using the README as a living document to guide the project, By documenting my approach, methodology, and progress, the README became more than just a summary, it became a reflection of my thought process and showcase of my skills.
+
+## ℹ️ About
+
+This project is part of the [Full Stack Web Development training program](https://factoriaf5.org/aprende/desarrollo-web-full-stack-asturias/) in [Asturias](https://en.wikipedia.org/wiki/Asturias), offered by [Factoría F5](https://factoriaf5.org/).
+
+The curriculum covers a wide range of topics, from basic programming languages ​​and UX principles to advanced project development techniques. It includes front-end and back-end technologies, agile methodologies, and tools for user experience design and database development. The program also focuses on essential soft skills such as communication, problem-solving, teamwork, adaptability, and time management.
+
+## 📧 Contact
+
+For any questions or inquiries, please do not hesitate to contact me!
+
+Happy coding! 🌱 🐒
