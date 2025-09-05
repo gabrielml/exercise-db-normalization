@@ -1,4 +1,4 @@
-# 🚧 Database Normalization Exercise
+# 🥷 Database Normalization
 
 This repository presents the comprehensive solution to
 a [database normalization](https://en.wikipedia.org/wiki/Database_normalization)
@@ -16,11 +16,12 @@ illustrating the database's structure and relationships.
 
 ## 🚀 Technologies Used
 
-This exercises was developed using a combination of foundational tools and technologies.
+This exercise was developed using a combination of foundational tools and technologies.
 
 * **Git & GitHub**: The version control system used to manage the project's history, track changes, and facilitate a structured
 workflow through branching and commits.
 * **Visual Studio Code and IntelliJ IDEA**: These are the integrated development environments (IDEs) used for development.
+* **[Mermaid](https://mermaid.js.org/)**: A JavaScript based diagramming and charting tool that renders Markdown-inspired text definitions to create and modify diagrams dynamically.
 * **[Google Sheets](https://workspace.google.com/intl/en/products/sheets/)**: Used for the initial data manipulation and normalization process.
 * **[draw.io](https://www.drawio.com/)**: The primary tool used to create the database diagrams for the conceptual and logical models.
 
@@ -28,11 +29,30 @@ workflow through branching and commits.
 
 This exercise's goal was to meet the following key requirements, which served as the guiding principles for its development.
 
-* **Database Normalization**: The core feature of this project was to normalize an unnormalized data table to a **Third Normal Form (3NF)**, compiant relational schema.
+* **Database Normalization**: The core feature of this project was to normalize an unnormalized data table to a **Third Normal Form (3NF)**, compliant relational schema.
 * **Conceptual Model**: The creation of a **Chen ER diagram** was required to represent the high-level, abstract relationships between entities.
 * **Logical Model**: The creation of a **Crow's Feet diagram** was required to provide a detailed, logical blueprint of the database schema, including tables, keys, and relationships.
 * **Repository and Documentation**: The exercise had to be managed on a GitHub repository with a complete README document that included a detailed description, diagrams, and a clear project
 history through meaningful Git commits.
+
+## 🧠 Key Learning & Concepts
+
+This exercise was a comprehensive journey into database design, from theory to practical application. The key concepts I learned and applied are:
+
+* **The Importance of Normalization [logical blueprint]**: I learned that normalizing a database is essential to prevent data redundancy, insertion anomalies, update anomalies, and deletion anomalies. By following the steps of 1NF, 2NF, and 3NF, I was able to transform a single, unorganized table
+  into a clean and efficient relational schema.
+
+* **The Three Levels of Data Modeling**: I gained a practical understanding of how database design progresses through different levels of abstraction.
+    1. **Conceptual Model (Chen ERD) [high-level  blueprint]**: This high-level view helped me identify the main entities and their relationships without getting bogged down in the technical details.
+    2. **Logical Model (Crow's Feet Diagram) [detailed blueprint]**: This model provided a detailed blueprint of the database, including tables, columns, and relationships, that  bridges the conceptual design with the physical implementation.
+    3. **Physical Model**: While not a deliverable for this exercise, understanding this final stage helped me appreciate how the logical  design is executed in a real-world database management system.
+
+* **Primary, Foreign, and Composite Keys**: I learned how to identify unique identifiers and establish relationships between tables using keys. The use of a **composite primary key** in the `Student_Courses` join table was a key learning point for resolving many-to-many relationships.
+
+* **Git and GitHub Workflow**: Beyond database concepts, this project reinforced the importance of a structured version control workflow. Using a `develop` branch and separate feature branches for each major task (e.g., `feat/1NF-tables`, `feat/logical-model`) allowed me to manage changes
+  cleanly and maintain a clear, professional project history.
+
+* **README-Driven Development**: I discovered the value of using the README as a living document to guide the project, By documenting my approach, methodology, and progress, the README became more than just a summary, it became a reflection of my thought process and showcase of my skills.
 
 ## 🔍 Strategic approach
 
@@ -252,25 +272,6 @@ We have reached the end of my exercise, congratulations and thank you if you hav
 And remember...
 
 >" _It is essential to understand the database structure before writing a single line of code, ensuring that the design is robust, efficient, and accurately reflects the standardized data model._ "
-
-## 🧠 Key Learning & Concepts
-
-This exercise was a comprehensive journey into database design, from theory to practical application. The key concepts I learned and applied are:
-
-* **The Importance of Normalization [logical blueprint]**: I learned that normalizing a database is essential to prevent data redundancy, insertion anomalies, update anomalies, and deletion anomalies. By following the steps of 1NF, 2NF, and 3NF, I was able to transform a single, unorganized table 
-into a clean and efficient relational schema.
-
-* **The Three Levels of Data Modeling**: I gained a practical understanding of how database design progresses through different levels of abstraction.
-  1. **Conceptual Model (Chen ERD) [high-level  blueprint]**: This high-level view helped me identify the main entities and their relationships without getting bogged down in the technical details.
-  2. **Logical Model (Crow's Feet Diagram) [detailed blueprint]**: This model provided a detailed blueprint of the database, including tables, columns, and relationships, that  bridges the conceptual design with the physical implementation.
-  3. **Physical Model**: While not a deliverable for this exercise, understanding this final stage helped me appreciate how the logical  design is executed in a real-world database management system.
-
-* **Primary, Foreign, and Composite Keys**: I learned how to identify unique identifiers and establish relationships between tables using keys. The use of a **composite primary key** in the `Student_Courses` join table was a key learning point for resolving many-to-many relationships.
-
-* **Git and GitHub Workflow**: Beyond database concepts, this project reinforced the importance of a structured version control workflow. Using a `develop` branch and separate feature branches for each major task (e.g., `feat/1NF-tables`, `feat/logical-model`) allowed me to manage changes
-cleanly and maintain a clear, profesional project history.
- 
-* **README-Driven Development**: I discovered the value of using the README as a living document to guide the project, By documenting my approach, methodology, and progress, the README became more than just a summary, it became a reflection of my thought process and showcase of my skills.
 
 ## ℹ️ About
 
