@@ -14,6 +14,26 @@ and a
 _logical_ [Crow's Feet database schema diagram](https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model#Crow's_foot_notation),
 illustrating the database's structure and relationships.
 
+## 🚀 Technologies Used
+
+This exercises was developed using a combination of foundational tools and technologies.
+
+* **Git & GitHub**: The version control system used to manage the project's history, track changes, and facilitate a structured
+workflow through branching and commits.
+* **Visual Studio Code and IntelliJ IDEA**: These are the integrated development environments (IDEs) used for development.
+* **[Google Sheets](https://workspace.google.com/intl/en/products/sheets/)**: Used for the initial data manipulation and normalization process.
+* **[draw.io](https://www.drawio.com/)**: The primary tool used to create the database diagrams for the conceptual and logical models.
+
+## ✨ Features & Requirements
+
+This exercise's goal was to meet the following key requirements, which served as the guiding principles for its development.
+
+* **Database Normalization**: The core feature of this project was to normalize an unnormalized data table to a **Third Normal Form (3NF)**, compiant relational schema.
+* **Conceptual Model**: The creation of a **Chen ER diagram** was required to represent the high-level, abstract relationships between entities.
+* **Logical Model**: The creation of a **Crow's Feet diagram** was required to provide a detailed, logical blueprint of the database schema, including tables, keys, and relationships.
+* **Repository and Documentation**: The exercise had to be managed on a GitHub repository with a complete README document that included a detailed description, diagrams, and a clear project
+history through meaningful Git commits.
+
 ## 🔍 Strategic approach
 
 My strategy for tackling this database normalization exercise is to follow systematic, step-by-step process. This
